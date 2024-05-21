@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex items-center justify-center h-screen bg-gray-200">
+    <div id="slider" class="flex items-center">
+      <button
+        id="previousButton"
+        class="px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded"
+      >
+        Previous
+      </button>
+      <div id="imageContainer" class="w-96 h-64 overflow-hidden mx-4">
+        <img
+          id="sliderImage"
+          class="w-full h-full object-cover"
+          src="images/image1.svg"
+          alt="Image Slider"
+        />
+      </div>
+      <button
+        id="nextButton"
+        class="px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded"
+      >
+        Next
+      </button>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
